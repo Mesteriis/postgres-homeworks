@@ -31,7 +31,7 @@ def main():
                 print("Данные в suppliers успешно добавлены")
 
                 add_foreign_keys(cur, json_file)
-                print(f"FOREIGN KEY успешно добавлены")
+                print("FOREIGN KEY успешно добавлены")
 
     except(Exception, psycopg2.DatabaseError) as error:
         print(error)
